@@ -64,6 +64,7 @@ export default class Aluno extends Model {
       },
     }, {
       sequelize,
+      modelName: 'Aluno',
     });
     return this;
   }

@@ -1,6 +1,6 @@
 import Sequelize, { Model } from 'sequelize';
 
-export default class Aluno extends Model {
+export default class Foto extends Model {
   static init(sequelize) {
     super.init({
       originalname: {
@@ -8,7 +8,7 @@ export default class Aluno extends Model {
         defaultValue: '',
         validate: {
           notEmpty: {
-            msg: 'Campo não pode esta vazio.',
+            msg: 'Campo não pode ficar vazio.',
           },
         },
       },
@@ -17,7 +17,7 @@ export default class Aluno extends Model {
         defaultValue: '',
         validate: {
           notEmpty: {
-            msg: 'Campo não pode esta vazio.',
+            msg: 'Campo não pode ficar vazio.',
           },
         },
       },
