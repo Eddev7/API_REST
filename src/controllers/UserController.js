@@ -69,7 +69,7 @@ class UserController {
         });
       }
 
-      await user.destroy(req.userId);
+      await user.destroy();
       return res.json(null);
     } catch (e) {
       return res.json(null);
